@@ -12,12 +12,12 @@
     <p> Using QGIS, I was able to display the map using different projections. First, I downloaded the data from Sakai to my desktop. After I saved and unzipped the files, I opened QGIS to begin working. Once in QGIS, I uploaded the ne_10m_admin_0_countries.shp (shapefile). Then I was able to click on the EPSG on the bottom right of the screen to adjust/change the EPSG for the desired coordinate reference system. For example, when I wanted to create the Pseudo-Mercator Projection, I clicked on the EPSG and filtered for "3857", and selected the Pseudo-Mercator coordinate reference system. After selecting the desired coordinate reference system, I used the Indicatrix Mapper plug-in, running the defaults, which added indicatrix circles over the projections. The indicatrix circles are useful to see the distortions that each projection cause.   </p>
     
     <h2>WGS84 Projection</h2>
-    <h3>Some observations</h3>
+    <h3>The indicatrix circles lose their shape the farther North and South they go. That is, while at the equator the Indicatrix circles are circles, the farther North and South you go, they turn into ellipses. This means that the projection does not preserve shape. </h3>
     <a href=".//maps/4326.png">
     <img src=".//maps/4326.png" alt="WGS84" width='500px'>
     </a>
     <h2>Aitoff Projection</h2>
-    <h3>Some observations</h3>
+    <h3>It appears that shape and area are distorted. However, it appears that it is the least distorted at the Prime Meridian. The farther North or South you go, the larger the circles get, suggesting distortion in area, and the farther East or West you go, the circles start to change into ellipses, suggesting distortion in shape.   </h3>
     <a href=".//maps/54043.png">
     <img src=".//maps/54043.png" alt="Aitoff" width='500px'>
     </a>
@@ -25,39 +25,39 @@
     <!-- <h3>EPSG: 3857, 53018, 54034, 54027, 102016, and two additional projections that you choose.</h3> -->
     <p></p>
     <h2>Pseudo Mercator Projection</h2>
-    <h3>Some observations</h3>
+    <h3>The indicatrix circles get larger towards the North and South poles, suggesting that the projections conserves shape but that area is distorted.</h3>
     <a href="./maps/3857.png">
     <img src="./maps/3857.png" alt="3857" width='500px'>
     </a>
     <h2>Winkel I Projection</h2>
-    <h3>Some observations</h3>
+    <h3>Similarly to the Aitoff Projection, it appears that the farther North or South you go, the larger the circles get, suggesting distortion in area, and the farther East or West you go, the circles start to change into ellipses, suggesting distortion in shape. However, the distortion doesn't seem as drastic as in the Aitoff Projection, as the circles aren't as drastically distorted.</h3>
     <a href="./maps/53018.png">
     <img src="./maps/53018.png" alt="53018" width='500px'>
     </a>
     <h2>Equal Area Cylindrical Projection</h2>
-    <h3>Some observations</h3>
+    <h3>The indicatrix circles suggest that there isn't any area distortion but that there is shape distortion. It appears that there is shape distortion, as the farther North or South you go, the circles start to change into ellipses.   </h3>
     <a href="./maps/54034.png">
     <img src="./maps/54034.png" alt="54034" width='500px'>
     </a>
     <h2>Equidistant Conic Projection</h2>
-    <h3>Some observations</h3>
+    <h3>Shape and area disortion appears to increase farther from the center of the projection.  </h3>
     <a href="./maps/54027.png">
     <img src="./maps/54027.png" alt="54027" width='500px'>
     </a>
     <h2>Azimuthal Equidistant Projection</h2>
-    <h3>Some observations</h3>
+    <h3>Similarly to the Equidistant Conic Projection, shape and area disortion appears to increase farther from the center of the projection. </h3>
     <a href="./maps/102016.png">
     <img src="./maps/102016.png" alt="102016" width='500px'>
     </a>
     <h2>World Robinson Projection</h2>
-    <h3>Some observations</h3>
+    <h3>The World Robinson Projection looks similiar to the Winkel I Projection. It appears that distortion increases closest to the poles. This projection distorts both shape and area, as the circles get larger and turn into slight ellipses closer to the poles.  </h3>
     <a href="./maps/54030.png">
     <img src="./maps/54030.png" alt="54030" width='500px'>
     </a>
-    <h2>Google Maps Global Mercator Projection</h2>
-    <h3>Some observations</h3>
-    <a href="./maps/900913.png">
-    <img src="./maps/900913.png" alt="900913" width='500px'>
+    <h2>World Hotine Projection</h2>
+    <h3>This Projection appears almost identical to the </h3>
+    <a href="./maps/54025.png">
+    <img src="./maps/54025.png" alt="54025" width='500px'>
     </a>
     <h2>Data used for this project</h2>
     <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natrual Earth 1:10m Cultural Vector </a>
