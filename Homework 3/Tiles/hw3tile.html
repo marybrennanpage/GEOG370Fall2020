@@ -27,7 +27,7 @@
   <div id="map"></div>
   <script>
       var map = L.map('map').setView([35.90314041782521, -79.05305715918449], 14.0);
-      L.tileLayer('http:///Users/mbpage/Documents/dev/geog370/GEOG370Fall2020/Homework%203/Tiles/tile_h3.html', {
+      L.tileLayer('./tiles/{z}/{x}/{y}.png', {
         minZoom: 12,
         maxZoom: 16,
         tms: false,
