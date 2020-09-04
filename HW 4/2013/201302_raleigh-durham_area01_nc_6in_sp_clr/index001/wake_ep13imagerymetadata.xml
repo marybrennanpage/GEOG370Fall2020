@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE metadata SYSTEM "http://www.fgdc.gov/metadata/fgdc-std-001-1998.dtd">
+<metadata>
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<origin>North Carolina Center for Geographic Information and Analysis</origin>
+				<pubdate>20130901</pubdate>
+				<title>Wake County, North Carolina Digital Orthoimagery 2013</title>
+				<edition>1.0</edition>
+				<geoform>vector digital data</geoform>
+				<pubinfo>
+					<pubplace>Raleigh, NC</pubplace>
+					<publish>NC Center for Geographic Information and Analysis on behalf of the North Carolina 911 Board</publish>
+				</pubinfo>
+				<onlink>http://data.nconemap.com</onlink>
+			</citeinfo>
+		</citation>
+		<descript>
+			<abstract>Orthoimagery in Wake County, North Carolina captured in leaf-off conditions in early 2013, 6-inch ground resolution, is a public resource provided by North Carolina's Statewide Orthoimagery Program, supported by the NC 911 Board. The state program includes orthoimagery acquired in 2012 and 2013 and published for 25 counties in the coastal region and eastern piedmont of North Carolina.  The NC 911 Board funded the 2013 acquisition as well as the coastal 2012 and statewide collection in 2010.  The 2013 project is consistent with the Business Plan for Orthoimagery in North Carolina (http://ncgicc.net/Portals/3/documents/OrthoImageryBusinessPlan_NC_20101029.pdf) that recommends acquisition of one-fourth of the state (or 25 counties) per year in a four-year cycle. The products are orthoimagery in true color, 6-inch ground resolution in 5,000 by 5,000-foot tiles, in uncompressed and compressed formats, packaged by county for distribution and accessible through the NC OneMap Geospatial Portal.  The project was managed by the NC Center for Geographic Information and Analysis (CGIA) in the NC OneMap framework of data access.  CGIA collaborated with the NC Geodetic Survey, the NC Department of Transportation's Photogrammetry Unit, and the Land Remdattimcords Management office in the Office of the Secretary of State to form a state team with expertise and experience in orthoimagery.  Acquisition contractors were selected by a Qualifications-Based Selection process. In addition the Statewide Mapping Advisory Committees Working Group for Orthophotography Planning provided technical advice. Images were collected with digital cameras in early 2013, image processing and quality control occurred through 2013, and products became available by early 2014. Image services are accessible and data are downloadable through NC OneMap.  The digital imagery for Wake County was acquired from February 1 to March 9, 2013.  The orthophoto tile naming convention utilizes the NC statewide index and uses the following parameters:
+OC is the 2 digit product code, O=orthoimagery, C=color
+6io is the 3 digit pixel size for 6-inch imagery
+37 is the 2 digit NC ANSI (FIPS) code
+000 is the 3 digit alpha numeric custodian code, Code "000" represents state maintained data
+"20765400" is the map index number. It is an 8 digit SOS LRM numbering of the basic modular unit with millionth place digit.
+20130201 is the 8 digit date (YYYYMMDD) representing the starting flight date for the county
+0309R0 is the 4 digit data (MMDD) representing the ending flight date for the county followed by the revision number for that tile.
+Seamline polygons buffered by a minimum 5000' are also available in Shapefile format for the county.  Each Shapefile contains the following fields: Vendor ID, Strip ID (flight line), Exposure ID, Date Flown.
+Technical reports were created across the project study area and include the following:
+Attachment C: Flight &amp; Control Plan (shows maps, layouts &amp; details for planned flight lines &amp; survey control per study area)
+Attachment C-1: Control Surveys Rerport (shows final locations, descriptions &amp; diagrams for survey ground control across the study area)
+Attachment D: Imagery Acquisition Compliance Report (provides flight acquisition maps, specifications &amp; supporting documentation by AT block across the study area)
+Attachment E: Airborne GPS-IMU Post Processing &amp; Aerotriangulation Report (provides flight details, state specification compliance table, software used, GPS-IMU summary tables, AT statistics and multiple supporting tables/files per AT block)
+In addition supporting documentation was created for each county and includes the following:
+Attachment F Report: Signed and Sealed Orthoimagery Delivery Report
+Attachment G Report: Quality Review Issues and Resolutions Report</abstract>
+			<purpose>This dataset was generated to provide a consistent reference map for base mapping and display in emergency 911 operations and GIS applications.</purpose>
+			<supplinf>This county dataset is one of 25 county datasets produced in a quarter-state project.  The bounding coordinates in this metadata file represent the bounding coordinates for all image tiles in the project area as a whole, not an individual tile.</supplinf>
+		</descript>
+		<timeperd>
+			<timeinfo>
+				<rngdates>
+					<begdate>20130201</begdate>
+					<begtime>unknown</begtime>
+					<enddate>20130309</enddate>
+					<endtime>unknown</endtime>
+				</rngdates>
+			</timeinfo>
+			<current>ground condition</current>
+		</timeperd>
+		<status>
+			<progress>Complete</progress>
+			<update>As needed</update>
+		</status>
+		<spdom>
+			<bounding>
+				<westbc>
+-78.983196</westbc>
+				<eastbc>
+-78.255605</eastbc>
+				<northbc>
+36.071701</northbc>
+				<southbc>
+35.519997</southbc>
+			</bounding>
+		</spdom>
+		<keywords>
+			<theme>
+				<themekt>None</themekt>
+				<themekey>aerial image</themekey>
+				<themekey>orthoimagery</themekey>
+				<themekey>basemap</themekey>
+				<themekey>natural color</themekey>
+				<themekey>digital orthophoto</themekey>
+				<themekey>Orthophotophotography</themekey>
+				<themekey>ortho</themekey>
+				<themekey>imagery</themekey>
+				<themekey>piedmont</themekey>
+				<themekey>leaf-off</themekey>
+			</theme>
+			<theme>
+				<themekt>ISO 19115 Topic Category</themekt>
+				<themekey>imageryBaseMapsEarthCover, 010</themekey>
+			</theme>
+			<place>
+				<placekt>William S. Powell, The North Carolina GAZETTEER</placekt>
+				<placekey>Wake County</placekey>
+				<placekey>North Carolina</placekey>
+			</place>
+		</keywords>
+		<accconst>None</accconst>
+		<useconst>The State of North Carolina shall not be held liable for any errors in this dataset, including visual content and positional accuracy of this imagery or image capture dates associated with the filename.</useconst>
+		<ptcontac>
+			<cntinfo>
+				<cntperp>
+					<cntper>Darrin Smith</cntper>
+					<cntorg>NC Center for Geographic Information and Analysis, Office of Information Technology Services</cntorg>
+				</cntperp>
+				<cntpos>Project Manager</cntpos>
+				<cntaddr>
+					<addrtype>mailing address</addrtype>
+					<address>20322 Mail Service Center</address>
+					<city>Raleigh</city>
+					<state>NC</state>
+					<postal>27699-0322</postal>
+					<country>U.S.</country>
+				</cntaddr>
+				<cntvoice>919-754-6589</cntvoice>
+				<cntfax>919-715-8551</cntfax>
+				<cntemail>darrin.smith@nc.gov</cntemail>
+				<hours>0900-1600 M-F EST</hours>
+			</cntinfo>
+		</ptcontac>
+		<datacred>This collaborative project included significant roles by the following: (1) the North Carolina 911 Board to acquire statwide orthoimagery in 2010, coastal orthoimagery in 2012, and eastern piedmont orthoimagery in 2013; (2) NC Department of Public Safety, Geospatial &amp; Technology Management Office manages statewide elevation data used in processing orthoimagery; (3) NC Geographic Information Coordinating Council's Statewide Mapping Advisory Committee, Working Group  for Orthophotography Planning provided technical advice; (4) NC Geodetic Survey manages the Continuously Operating Reference Station (CORS) network and played a key role in ground control as well as horizontal quality control of the data; (5) NC Secretary of State's Office, Land Records Management Program provided NC Technical Specifications for Digital Orthophoto Base Mapping (2009) and technical advice; (6) NC Department of Transportation provides technical and advisory services for compliance and oversight as well as performing visual quality review for as much as 30% of the imagery deliverables; and (7) The NC Center for Geographic Information and Analysis managed the overall project including management of contractors, outreach, product verification and distribution, and data access via NC OneMap.</datacred>
+		<secinfo>
+			<secsys>None</secsys>
+			<secclass>Unclassified</secclass>
+			<sechandl>None</sechandl>
+		</secinfo>
+		<native>Microsoft Windows Vista Version 6.1 (Build 7601) Service Pack 1; ESRI ArcCatalog 9.3.0.1770</native>
+	</idinfo>
+	<dataqual>
+		<logic>In accordance with the North Carolina technical specifications for digital orthophoto base mapping products the horizontal accuracy was ensured by the placement of GPS surveyed ground control points prior to the acquisition of the digital imagery.  These points consisted of existing survey control recovered from the 2010 NC statewide project as well as new points set for the 2013 Eastern Piedmont Orthophoto project.  The following checks were performed using these GPS survey control points:
+1. The ground control and processed Airborne GPS/IMU data were validated through an aerotriangulation bundle adjustment using Z/I ISAT software.  The residuals for each AT block met the required standards and the results were outlined in the signed and sealed Aerotriangulation Report.
+2.  The digital orthophotos were validated visually during the seamline mosaicking, Level 1 (vendor QC) &amp; Level 2-4 (client QC) inspection processes.  Any issue identified during the Level 2-4 (client QC) process were addressed and/or noted within the Attachment G Lifecycle, Quality Review Issues and Resolutions Report.
+
+Surdex performed color/tonal correction &amp; balancing for all DMC imagery using Surdex's GroupTool Software.  Image metric guidelines were established by CGIA prior to the start of acquisition.  4 landcover classifications (including urban/industrial, rural/farmland/wooded, sub-urban residential, swamp/wetland) were chosen from the existing 2010 NC Statewide Exploitation Images.  These images were color/tonal balanced and then provided to each vendor study area as target image samples.  Surdex performed color/tonal corrections by flight line across the project study area utilizing the established 4 landcover image samples for matching purposes.</logic>
+		<complete>All orthophoto tiles were inspected to ensure that they conform to the delivery specifications, use the appropriate file naming convention &amp; all files load in their correct geographic position.
+Orthophoto tiles are also reviewed to ensure that they conform to the North Carolina Technical Specifications for Digital Orthophoto Base Mapping state standards adopted on October 1, 2009 as well as conform to the project specifications for file standard and content.  These specifications and standards are outlined by county within the Attachment F, Orthoimagery Delivery Report.</complete>
+		<posacc>
+			<horizpa>
+				<horizpar>The digital orthophotos shall meet or exceed the following ASPRS Class I Horizontal Accuracy Standards for well defined points: 0.5' GSD, 1"=200' scale (1:2400), limiting RMSE X or RMSE Y of 2.0 feet
+In addition horizontal displacement is less than or equal to 3 pixels along transportation features.
+The digital orthophotos were also validated statistically by creating an Accuracy Analyst Report which compared the GPS survey control points against the orthophotos and produced error statistics for the entire Surdex Study Area.
+The results of this horizintal accuracy check is as follows:
+RmseX: 0.622', RmseY: 0.382', RmseH: 0.730'</horizpar>
+			</horizpa>
+			<vertacc>
+				<vertaccr>There is no vertical component for this set of orthoimagery.</vertaccr>
+			</vertacc>
+		</posacc>
+		<lineage>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>Geospatial &amp; Technology Management Office</origin>
+						<pubdate>2003</pubdate>
+						<title>NC Floodplain Mapping Program (FMP) LIDAR digital elevation model</title>
+						<edition>1.0</edition>
+						<geoform>digital data</geoform>
+						<pubinfo>
+							<pubplace>Raleigh</pubplace>
+							<publish>Geospatial &amp; Technology Management Office</publish>
+						</pubinfo>
+					</citeinfo>
+				</srccite>
+				<typesrc>disc</typesrc>
+				<srctime>
+					<timeinfo>
+						<sngdate>
+							<caldate>2003</caldate>
+						</sngdate>
+					</timeinfo>
+					<srccurr>ground condition</srccurr>
+				</srctime>
+				<srccitea>LIDAR DEM</srccitea>
+				<srccontr>The LIDAR digital elevation data used for the rectification of the orthophotos was provided by the Geospatial &amp; Technology Management Office.</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>Geospatial &amp; Technology Management Office</origin>
+						<pubdate>2010</pubdate>
+						<title>Tile index</title>
+						<edition>1.0</edition>
+						<geoform>vector digital data</geoform>
+						<pubinfo>
+							<pubplace>None</pubplace>
+							<publish>None</publish>
+						</pubinfo>
+					</citeinfo>
+				</srccite>
+				<typesrc>disc</typesrc>
+				<srctime>
+					<timeinfo>
+						<sngdate>
+							<caldate>2010</caldate>
+						</sngdate>
+					</timeinfo>
+					<srccurr>ground condition</srccurr>
+				</srctime>
+				<srccitea>INDEX</srccitea>
+				<srccontr>The tile definition is used to cut orthorectified imagery into manageable, usable images.  Each tile is 5000' X 5000'.</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>NC Geodetic Survey</origin>
+						<pubdate>2013</pubdate>
+						<title>North Carolina County Boundaries</title>
+						<edition>1.0</edition>
+						<geoform>vector digital data</geoform>
+						<pubinfo>
+							<pubplace>Raleigh</pubplace>
+							<publish>NC Geodetic Survey</publish>
+						</pubinfo>
+					</citeinfo>
+				</srccite>
+				<typesrc>digital download</typesrc>
+				<srctime>
+					<timeinfo>
+						<sngdate>
+							<caldate>2013</caldate>
+						</sngdate>
+					</timeinfo>
+					<srccurr>ground condition</srccurr>
+				</srctime>
+				<srccitea>CB</srccitea>
+				<srccontr>The county boundaries are used to select tiles by county for packaging imagery for offline distribution.</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>United States Geological Survey</origin>
+						<pubdate>Unknown</pubdate>
+						<title>USGS National Elevation Dataset (NED)</title>
+						<edition>1/3 Arc Second</edition>
+						<geoform>raster digital data</geoform>
+						<pubinfo>
+							<pubplace>Sioux Falls, SD</pubplace>
+							<publish>USGS/EROS</publish>
+						</pubinfo>
+						<othercit>10-meter shoreline surface data</othercit>
+					</citeinfo>
+				</srccite>
+				<typesrc>data download</typesrc>
+				<srctime>
+					<timeinfo>
+						<sngdate>
+							<caldate>unknown</caldate>
+						</sngdate>
+					</timeinfo>
+					<srccurr>ground condition</srccurr>
+				</srctime>
+				<srccitea>1/3 Arc Second NED</srccitea>
+				<srccontr>The 1/3 arc second national elevation data used for the rectification of the orthophotos along the Virginia state line was downloaded from the USGS/EROS data center.</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>NCDOT</origin>
+						<pubdate>2012</pubdate>
+						<title>NCDOT Nadir Locations</title>
+						<edition>1.0</edition>
+						<geoform>vector digital data</geoform>
+					</citeinfo>
+				</srccite>
+				<typesrc>digital download</typesrc>
+				<srctime>
+					<timeinfo>
+						<sngdate>
+							<caldate>2012</caldate>
+						</sngdate>
+					</timeinfo>
+					<srccurr>ground condition</srccurr>
+				</srctime>
+				<srccitea>Nadir Area Locations</srccitea>
+				<srccontr>Surdex used this polygon Shapefile to locate tall buildings for planning &amp; acquiring heavy overlap flight lines over these locations.</srccontr>
+			</srcinfo>
+			<procstep>
+				<procdesc>GPS ground control survey consisting of recovered existing points from the 2010 NC Statewide project and new points set for the 2013 Eastern Piedmont project.  Survey points were established via GNSS observations using the North Carolina Geodetic Survey (NCGS) statewide Real Time Network (RTN) or Continuously Operating Reference Station (CORS) data.  All survey values were computed in North Carolina State Plane Coordinate System (Zone 3200), horizontal datum is NAD83 (2011) Epoch 2010.00 and elevations are based on the NAVD88 vertical datum and were computed using Geoid 2012.  All coordinates and elevations were provided in U.S. Survey Feet.  Specific survey control point locations &amp; details can be found in the Attachment C-1 Survey Control Report.</procdesc>
+				<srcused>NCGS-RTN</srcused>
+				<srcused>CORS</srcused>
+				<procdate>201302</procdate>
+				<srcprod>XYZ</srcprod>
+				<srcprod>XYZ</srcprod>
+				<proccont>
+					<cntinfo>
+						<cntorgp>
+							<cntorg>ESP Associates</cntorg>
+							<cntper>Jamey Gray</cntper>
+						</cntorgp>
+						<cntpos>Professional Land Surveyor</cntpos>
+						<cntaddr>
+							<addrtype>mailing and physical address</addrtype>
+							<address>5121 Kingdom Way</address>
+							<address>Suite 208</address>
+							<city>Raleigh</city>
+							<state>NC</state>
+							<postal>27607</postal>
+							<country>USA</country>
+						</cntaddr>
+						<cntvoice>919-678-1070</cntvoice>
+						<cntfax>919-677-1252</cntfax>
+						<cntemail>jgray@espassociates.com</cntemail>
+					</cntinfo>
+				</proccont>
+			</procstep>
+			<procstep>
+				<procdesc>Create an image service from finished orthoimagery submitted by contractors to display in an online application for visual quality review.</procdesc>
+				<srcused>OIMGTILE</srcused>
+				<procdate>201307</procdate>
+				<srcprod>OIMGSERV</srcprod>
+				<proccont>
+					<cntinfo>
+						<cntorgp>
+							<cntorg>Photo Science</cntorg>
+						</cntorgp>
+						<cntaddr>
+							<addrtype>mailing and physical address</addrtype>
+							<address>523 Wellington Way</address>
+							<city>Lexington</city>
+							<state>KY</state>
+							<postal>40503</postal>
+							<country>USA</country>
+						</cntaddr>
+						<cntvoice>859-277-8700</cntvoice>
+						<cntfax>859-277-8901</cntfax>
+						<cntemail>info@photoscience.com</cntemail>
+					</cntinfo>
+				</proccont>
+			</procstep>
+			<procstep>
+				<procdesc>Visual quality control consisted of several levels of review. Project contractors conducted both and initial macro and micro lever review of all data. After the data was released to the State, NCDOT reviewed 25% of each county's ortho tiles, CGIA reviewed 5% and the counties had the ability to review the full county worth of data and were provided a list of 25% of tiles to review. CGIA then reviewed all submitted issues and submitted those considered to be in scope to project guidelines to the contractors for review. Contractor teams reviewed these submitted issues and assessed whether a fix was feasible. Tiles that were repaired were validated by NCDOT to ensure that fixes were made and did not introduce new issues.  All review by NCDOT, CGIA, and other end-users as well as contractors' assessment and evaluation was conducted in an cloud-hosted environment accessible through an online Flex interface called VOICE.</procdesc>
+				<srcused>OIMGSERV</srcused>
+				<procdate>2013</procdate>
+				<proccont>
+					<cntinfo>
+						<cntorgp>
+							<cntorg>NC Center for Geographic Information and Analysis</cntorg>
+						</cntorgp>
+						<cntpos>Project Manager</cntpos>
+						<cntaddr>
+							<addrtype>mailing address</addrtype>
+							<address>20322 Mail Service Center</address>
+							<city>Raleigh</city>
+							<state>NC</state>
+							<postal>27699-0322</postal>
+							<country>USA</country>
+						</cntaddr>
+						<cntvoice>919-754-6589</cntvoice>
+						<cntfax>919-715-8551</cntfax>
+						<cntemail>darrin.smith@nc.gov</cntemail>
+					</cntinfo>
+				</proccont>
+			</procstep>
+			<procstep>
+				<procdesc>Horizontal quality control consists of utilizing quality control test points obtained from an independent source of higher accuracy of the tested product.  The purpose of the quality control test is to determine the horizontal accuracy of the product and produce a report documenting the result of the accuracy test.</procdesc>
+				<srcused>OIMGTILE</srcused>
+				<procdate>2013</procdate>
+				<proccont>
+					<cntinfo>
+						<cntorgp>
+							<cntorg>NC Geodetic Survey</cntorg>
+							<cntper>Gary Thompson</cntper>
+						</cntorgp>
+						<cntpos>Director</cntpos>
+						<cntaddr>
+							<addrtype>4105 Reedy Creek Road</addrtype>
+							<address>Bowers Building</address>
+							<city>Raleigh</city>
+							<state>NC</state>
+							<postal>27607</postal>
+							<country>USA</country>
+						</cntaddr>
+						<cntvoice>919-948-7844</cntvoice>
+						<cntfax>919-733-4407</cntfax>
+						<cntemail>gary.thompson@ncdps.gov</cntemail>
+					</cntinfo>
+				</proccont>
+			</procstep>
+			<procstep>
+				<procdesc>20:1 MRSID Tile Creation- NCDOT created a standalone 20:1 compressed copy of each orthoimagery tile delivered in the 2013 project. Lizardtech software was used to compress each TIFF tile to a 20:1 MRSID formatted file. The resulting MRSID files maintain the same file name as the TIFF tiles.</procdesc>
+				<srcused>OIMGTILE</srcused>
+				<procdate>2013</procdate>
+				<srcprod>MRSID</srcprod>
+				<proccont>
+					<cntinfo>
+						<cntorgp>
+							<cntorg>NC Department of Transportation</cntorg>
+							<cntper>Keith Johnston</cntper>
+						</cntorgp>
+						<cntaddr>
+							<addrtype>mailing and physical address</addrtype>
+							<address>1585 Mail Service Center</address>
+							<city>Raleigh</city>
+							<state>NC</state>
+							<postal>27699-1585</postal>
+							<country>USA</country>
+						</cntaddr>
+						<cntvoice>919.707.7093</cntvoice>
+						<cntfax>919.250.4176</cntfax>
+						<cntemail>kjohnston@ncdot.gov</cntemail>
+					</cntinfo>
+				</proccont>
+			</procstep>
+			<procstep>
+				<procdesc>50:1 MRSID Countywide Mosaic Creation- NCDOT created a standalone 50:1 compressed file of all of the imagery that intersects each county. Lizardtech software was used to merge all of the 20:1 MRSID tiles into a unified singular 50:1 compressed file containing all imagery for a county, excluding any sensitive military areas.</procdesc>
+				<srcused>MRSID</srcused>
+				<procdate>2013</procdate>
+				<srcprod>MRSIDMOS</srcprod>
+				<proccont>
+					<cntinfo>
+						<cntorgp>
+							<cntorg>NC Department of Transportation</cntorg>
+							<cntper>Keith Johnston</cntper>
+						</cntorgp>
+						<cntaddr>
+							<addrtype>mailing and physical address</addrtype>
+							<address>1585 Mail Service Center</address>
+							<city>Raleigh</city>
+							<state>NC</state>
+							<postal>27699-1585</postal>
+							<country>USA</country>
+						</cntaddr>
+						<cntvoice>919.707.7093</cntvoice>
+						<cntfax>919.250.4176</cntfax>
+						<cntemail>kjohnston@ncdot.gov</cntemail>
+					</cntinfo>
+				</proccont>
+			</procstep>
+			<procstep>
+				<procdesc>CGIA product validation process: Before delivery of data to each county, CGIA validated that each county would receive all TIFF and MRSID 20:1 compression tiles that intersect that county and ensured that the files were named correctly, were correctly spatially referenced, and validated that each drive contains a countywide MRSID 50:1 compression mosaic, an index shapefile denoting the location of each tile, a seamline polygon that denotes the location and date of each discrete image used to create the imagery, project documentation about the ortho creation process, any updated elevation information, and both MRSID 20:1 compression tiles and a MRSID 50:1 mosaic for each neighboring county.</procdesc>
+				<procdate>2014</procdate>
+				<srcprod>VALID</srcprod>
+				<proccont>
+					<cntinfo>
+						<cntorgp>
+							<cntorg>NC Center for Geographic Information and Analysis</cntorg>
+							<cntper>Darrin Smith</cntper>
+						</cntorgp>
+						<cntpos>Project Manager</cntpos>
+						<cntaddr>
+							<addrtype>mailing address</addrtype>
+							<address>20322 Mail Service Center</address>
+							<city>Raleigh</city>
+							<state>NC</state>
+							<postal>27699-0322</postal>
+							<country>USA</country>
+						</cntaddr>
+						<cntvoice>919-754-6589</cntvoice>
+						<cntfax>919-715-8551</cntfax>
+						<cntemail>darrin.smith@nc.gov</cntemail>
+					</cntinfo>
+				</proccont>
+			</procstep>
+			<procstep>
+				<procdesc>Aerial photography was captured over the study area using the Zeiss Intergraph Digital Mapping Camera (DMC).  Surdex utilized two Cessna 441 Conquest aircraft and DMC serial numbers 01-149 &amp; 01-148.  Imagery acquisition followed the NC state specification standards and are outlined in the Attachment D: Imagery Acquisition Compliance Reports.</procdesc>
+				<srcused>APF/AFL</srcused>
+				<procdate>2013</procdate>
+				<srcprod>XPS/EXP</srcprod>
+				<proccont>
+					<cntinfo>
+						<cntorgp>
+							<cntorg>Surdex Corporation</cntorg>
+							<cntper>Wade Williams</cntper>
+						</cntorgp>
+						<cntpos>Project Manager</cntpos>
+						<cntaddr>
+							<addrtype>mailing and physical address</addrtype>
+							<address>520 Spirit of St. Louis Blvd.</address>
+							<city>Chesterfield</city>
+							<state>MO</state>
+							<postal>63005</postal>
+							<country>USA</country>
+						</cntaddr>
+						<cntvoice>636-368-4400</cntvoice>
+						<cntfax>636-368-4401</cntfax>
+						<cntemail>wadew@surdex.com</cntemail>
+					</cntinfo>
+				</proccont>
+			</procstep>
+			<procstep>
+				<procdesc>Exploitation image post processing, inspection and color/tonal correction was completed for all DMC imagery using Z/I PPS and Surdex's GroupTool Software.  Once post processed all images were inspected for any issues that may be cause for rejection in accordance to the state standards and specifications.  Image metric guidelines were also established across the study areas using 4 landcover classifications.  Color/tonal corrections were processed by flight line across the project study area utilizing the established 4 landcover samples for matching purposes.</procdesc>
+				<srcused>DAT</srcused>
+				<procdate>2013</procdate>
+				<srcprod>Tiff</srcprod>
+				<proccont>
+					<cntinfo>
+						<cntorgp>
+							<cntorg>Surdex Corporation</cntorg>
+							<cntper>Wade Williams</cntper>
+						</cntorgp>
+						<cntpos>Project Manager</cntpos>
+						<cntaddr>
+							<addrtype>mailing and physical address</addrtype>
+							<address>520 Spirit of St. Louis Blvd.</address>
+							<city>Chesterfield</city>
+							<state>MO</state>
+							<postal>63005</postal>
+							<country>USA</country>
+						</cntaddr>
+						<cntvoice>636-368-4400</cntvoice>
+						<cntfax>636-368-4401</cntfax>
+						<cntemail>wadew@surdex.com</cntemail>
+						<cntinst>520 Spirit of St. Louis Blvd.</cntinst>
+					</cntinfo>
+				</proccont>
+			</procstep>
+			<procstep>
+				<procdesc>Airborne GPS-IMU data was collected on all flights across the project study area.  Surdex setup Trimble-5700 GPS base stations at local airports within or near the study area.  The 0.5 second base data was post processed for each flight using both AeroOffice &amp; GrafNAV software.  Further details regarding each missions data can be found in the signed and sealed Attachment E: Airborne GPS-IMU Post Processing &amp; Aerotriangulation Reports.</procdesc>
+				<srcused>T00</srcused>
+				<procdate>2013</procdate>
+				<srcprod>GPB</srcprod>
+				<proccont>
+					<cntinfo>
+						<cntorgp>
+							<cntorg>Surdex Corporation</cntorg>
+							<cntper>Wade Williams</cntper>
+						</cntorgp>
+						<cntpos>Project Manager</cntpos>
+						<cntaddr>
+							<addrtype>mailing and physical address</addrtype>
+							<address>520 Spirit of St. Louis Blvd.</address>
+							<city>Chesterfield</city>
+							<state>MO</state>
+							<postal>63005</postal>
+							<country>USA</country>
+						</cntaddr>
+						<cntvoice>636-368-4400</cntvoice>
+						<cntfax>636-368-4401</cntfax>
+						<cntemail>wadew@surdex.com</cntemail>
+					</cntinfo>
+				</proccont>
+			</procstep>
+			<procstep>
+				<procdesc>Fully Analytical Aerotriangulation was completed in blocks across the project study area.  Surdex performed the aerotriangulation using Z/I's ISAT software package.  Surdex utilized the processed airborne GPS and ground survey points in order to control the exploitation imagery within each AT block.  All AT results were produced to meet or exceed the state specifications &amp; standards for 1"=200' scale ASPRS Class I orthophotos.  Further details regarding the AT results for each block can be found within the signed and sealed Attachment E: Airborne GPS-IMU Post Processing &amp; Aerotriangulation Reports.</procdesc>
+				<srcused>ISAT</srcused>
+				<procdate>2013</procdate>
+				<srcprod>Text</srcprod>
+				<proccont>
+					<cntinfo>
+						<cntorgp>
+							<cntorg>Surdex Corporation</cntorg>
+							<cntper>Wade Williams</cntper>
+						</cntorgp>
+						<cntpos>Project Manager</cntpos>
+						<cntaddr>
+							<addrtype>mailing and physical address</addrtype>
+							<address>520 Spirit of St. Louis Blvd.</address>
+							<city>Chesterfield</city>
+							<state>MO</state>
+							<postal>63005</postal>
+							<country>USA</country>
+						</cntaddr>
+						<cntvoice>636-368-4400</cntvoice>
+						<cntfax>636-368-4401</cntfax>
+						<cntemail>wadew@surdex.com</cntemail>
+					</cntinfo>
+				</proccont>
+			</procstep>
+			<procstep>
+				<procdesc>Minor updates were completed to the NC Floodplain LIDAR digital elevation models.  These updates occured where the existing ground terrain had been changed enough to cause offsets, image smearing, warping, anomolies, etc. in the orthophoto imagery.  Surdex utilized the final aerotriangulation results and exploitation imgery in order to create 3D stereo models within DATEM's Summit software.  The final surface was collected directly into ESRI's Arcmap software.  Updated surface were provided in Shapefile format with both points &amp; breaklines.</procdesc>
+				<srcused>ISAT</srcused>
+				<srcused>Tiff</srcused>
+				<procdate>2013</procdate>
+				<srcprod>Shapefile</srcprod>
+				<proccont>
+					<cntinfo>
+						<cntorgp>
+							<cntorg>Surdex Corporation</cntorg>
+							<cntper>Wade Williams</cntper>
+						</cntorgp>
+						<cntpos>Project Manager</cntpos>
+						<cntaddr>
+							<addrtype>mailing and physical address</addrtype>
+							<address>520 Spirit of St. Louis Blvd.</address>
+							<city>Chesterfield</city>
+							<state>MO</state>
+							<postal>63005</postal>
+							<country>USA</country>
+						</cntaddr>
+						<cntvoice>636-368-4400</cntvoice>
+						<cntfax>636-368-4401</cntfax>
+						<cntemail>wadew@surdex.com</cntemail>
+					</cntinfo>
+				</proccont>
+			</procstep>
+			<procstep>
+				<procdesc>Surdex utilized the final aerotriangulation results, exploitation imagery &amp; NC LiDAR DEM in order to generate the overlapping orthophotos.  These overlapping orthophotos were then virtually mosaicked together using a combination of automated seamline placement followed by manual seamline QA/QC editting.  A macro quality review of the color/tonal balance was performed for each block across the project study area.  Orthophoto tiles were then created and the micro Level 1 was performed.  This QA/QC inspection process includes corrections for issues such as image distortions, blurring, minor offsets, warping, artifacts, etc. throughout the images.  Once the Level 1 review process was completed the 5000' orthophoto Geotiff tiles were created and shipped to the online image hosting service for the client Levels 2-4 QA/QC review.  Any issues discovered during the Level 2-4 review have been corrected and/or documented for each county in the Attachment G: Lifecycle Report.  Once all of the Level 2-4 issues were resolved a 1TB hard drive was delivered to CGIA containing the final orthophoto tiles, seamlines, tile index and updated DEM (if necessary) by county.  Further details regarding this final dataset including: file formatting, reference data &amp; quality review can be found in the signed and sealed Attachment F: Orthoimagery Delivery Report.</procdesc>
+				<srcused>Tiff</srcused>
+				<srcused>ISAT</srcused>
+				<srcused>DEM</srcused>
+				<procdate>2013</procdate>
+				<srcprod>Geotiff</srcprod>
+				<srcprod>TFW</srcprod>
+				<srcprod>Shapefile</srcprod>
+				<proccont>
+					<cntinfo>
+						<cntorgp>
+							<cntorg>Surdex Corporation</cntorg>
+							<cntper>Wade Williams</cntper>
+						</cntorgp>
+						<cntpos>Project Manager</cntpos>
+						<cntaddr>
+							<addrtype>mailing and physical address</addrtype>
+							<address>520 Spirit of St. Louis Blvd.</address>
+							<city>Chesterfield</city>
+							<state>MO</state>
+							<postal>63005</postal>
+							<country>USA</country>
+						</cntaddr>
+						<cntvoice>636-368-4400</cntvoice>
+						<cntfax>636-368-4401</cntfax>
+						<cntemail>wadew@surdex.com</cntemail>
+					</cntinfo>
+				</proccont>
+			</procstep>
+			<procstep>
+				<procdesc>Surdex performed pre-flight planning in January of 2013.  This planning followed the acquisition specifications and guidelines set forth by the state and CGIA.  In order to satisfy these specifications all flight lines were planned in a south to north orientation.  Additional Nadir lines with heavy overlap were planned to reduce building lean over downtown Raleigh, Downtown Durham, Duke Campus, NCCU Campus &amp; UNC Campus .  Flight lines were also planned with the first and last two exposures outside of the project study area limits.  The image foot prints were planned so that all final orthophoto tiles have full image coverage as well.  Additional flight planning specifications including figures, tables and support files can be found in the Attachment C: SA1 Flight and Control Plan Report.</procdesc>
+				<srcused>Shapefile</srcused>
+				<procdate>201301</procdate>
+				<srcprod>APF/AFL</srcprod>
+				<srcprod>Shapefile</srcprod>
+				<proccont>
+					<cntinfo>
+						<cntorgp>
+							<cntorg>Surdex Corporation</cntorg>
+							<cntper>Wade Williams</cntper>
+						</cntorgp>
+						<cntpos>Project Manager</cntpos>
+						<cntaddr>
+							<addrtype>mailing and physical address</addrtype>
+							<address>520 Spirit of St. Louis Blvd.</address>
+							<city>Chesterfield</city>
+							<state>MO</state>
+							<postal>63005</postal>
+							<country>USA</country>
+						</cntaddr>
+						<cntvoice>636-368-4400</cntvoice>
+						<cntfax>636-368-4401</cntfax>
+						<cntemail>wadew@surdex.com</cntemail>
+					</cntinfo>
+				</proccont>
+			</procstep>
+		</lineage>
+		<cloud>0</cloud>
+	</dataqual>
+	<spdoinfo>
+		<direct>Vector</direct>
+		<ptvctinf>
+			<sdtsterm>
+				<sdtstype>G-polygon</sdtstype>
+				<ptvctcnt>950</ptvctcnt>
+			</sdtsterm>
+		</ptvctinf>
+	</spdoinfo>
+	<spref>
+		<horizsys>
+			<planar>
+				<planci>
+					<plance>coordinate pair</plance>
+					<coordrep>
+						<absres>0.5</absres>
+						<ordres>0.5</ordres>
+					</coordrep>
+					<plandu>U.S. Feet</plandu>
+				</planci>
+				<gridsys><gridsysn>State Plane Coordinate System 1983</gridsysn><spcs><spcszone>3200</spcszone><lambertc><stdparll>34.333333</stdparll><stdparll>36.166667</stdparll><longcm>-79.000000</longcm><latprjo>33.750000</latprjo><feast>2000000.0</feast><fnorth>0.000000</fnorth></lambertc></spcs></gridsys></planar>
+			<geodetic>
+				<horizdn>North American Datum of 1983</horizdn>
+				<ellips>Geodetic Reference System 80</ellips>
+				<semiaxis>6378137.000000</semiaxis>
+				<denflat>298.257222</denflat>
+			</geodetic>
+		</horizsys>
+		<vertdef>
+			<altsys>
+				<altdatum>North American Vertical Datum of 1988</altdatum>
+				<altres>0.5</altres>
+				<altunits>feet</altunits>
+				<altenc>Explicit elevation coordinate included with horizontal coordinates</altenc>
+			</altsys>
+		</vertdef>
+	</spref>
+	<eainfo>
+		<overview>
+			<eaover>Color orthophotos are comprised of pixels. Each pixel is assigned a value of 0 to 255. That number will refer to a color look-up table which contains red, green and blue (RGB) values, each from 0 to 255, for that pixel within the image.</eaover>
+			<eadetcit>None</eadetcit>
+		</overview>
+	</eainfo>
+	<distinfo>
+		<distrib>
+			<cntinfo>
+				<cntperp>
+					<cntper>David Giordano</cntper>
+					<cntorg>NC Center for Geographic Information and Analysis</cntorg>
+				</cntperp>
+				<cntpos>Database Administrator</cntpos>
+				<cntaddr>
+					<addrtype>mailing address</addrtype>
+					<address>20322 Mail Service Center</address>
+					<city>Raleigh</city>
+					<state>NC</state>
+					<postal>27699-0322</postal>
+					<country>U.S.</country>
+				</cntaddr>
+				<cntvoice>919-754-6585</cntvoice>
+				<cntfax>919-715-8551</cntfax>
+				<cntemail>david.giordano@nc.gov</cntemail>
+				<hours>0800-1700 M-F EST</hours>
+			</cntinfo>
+		</distrib>
+		<resdesc>Wake County, NC 1:2400, 0.5-foot pixel digital color orthophotography (2013)</resdesc>
+		<distliab>The NC Center for Geographic Information and Analysis makes no guarantee or warranty concerning the accuracy of information contained in the geographic data. Also, this organization makes no warranty, either expressed or implied, regarding the condition of the product or its fitness for any particular purpose. The burden for determining fitness for use lies entirely with the user.  Although these files have been processed successfully, no warranty is made by this organization regarding the use of these data on any other system, nor does the fact of distribution constitute or imply such a warranty.</distliab>
+		<stdorder>
+			<digform>
+				<digtinfo>
+					<formname>TIFF with JPEG Compression</formname>
+					<transize>0.070</transize>
+				</digtinfo>
+				<digtopt>
+					<onlinopt>
+						<computer>
+							<networka>
+								<networkr>http://data.nconemap.com</networkr>
+							</networka>
+						</computer>
+						<accinstr>FTP</accinstr>
+					</onlinopt>
+					<offoptn>
+						<offmedia>CDROM, DVD, USB hard drive</offmedia>
+						<reccap>
+							<recden>700, 4400</recden>
+							<recdenu>mb</recdenu>
+						</reccap>
+						<recfmt>Unknown</recfmt>
+					</offoptn>
+				</digtopt>
+			</digform>
+			<fees>no charge for online distribution.  For offline options contact CGIA.</fees>
+			<ordering>Contact CGIA</ordering>
+		</stdorder>
+		<custom>Contact CGIA for custom datasets</custom>
+		<techpreq>software that can display a digital image</techpreq>
+		<availabl>
+			<timeinfo>
+				<sngdate>
+					<caldate>2013</caldate>
+				</sngdate>
+			</timeinfo>
+		</availabl>
+	</distinfo>
+	<metainfo>
+		<metd>20131022</metd>
+		<metrd>2013</metrd>
+		<metc>
+			<cntinfo>
+				<cntperp>
+					<cntper>Darrin Smith</cntper>
+					<cntorg>NC Center for Geographic Information and Analysis</cntorg>
+				</cntperp>
+				<cntpos>Project Manager</cntpos>
+				<cntaddr>
+					<addrtype>mailing</addrtype>
+					<address>20322 Mail Service Center</address>
+					<city>Raleigh</city>
+					<state>NC</state>
+					<postal>27699-0322</postal>
+					<country>U.S.</country>
+				</cntaddr>
+				<cntvoice>919-754-6589</cntvoice>
+				<cntfax>919-715-0408</cntfax>
+				<cntemail>darrin.smith@nc.gov</cntemail>
+				<hours>0900-1600 M-F EST</hours>
+			</cntinfo>
+		</metc>
+		<metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+		<metstdv>FGDC-STD-001-1998</metstdv>
+		<mettc>local time</mettc>
+	</metainfo>
+</metadata>
