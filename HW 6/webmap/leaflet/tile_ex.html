@@ -39,7 +39,10 @@
   <script>
       var map = L.map('map').setView([35.90352481107432, -79.04926200483555], 14.0);
      
-     var daMarker = L.marker([35.90352481107432, -79.04926200483555]);
+     var daMarker = L.marker([35.90352481107432, -79.04926200483555]); //uncwell
+     var daMarker2 = L.geoJSON(uncmuseum) //uncmuseum 
+     var daMarker3 = L.geoJSON(uncdorrance) //uncdorrance
+     var daMarker4 = L.geoJSON(uncsouth) //uncsouth 
 
      //Carolina Basketball Museum/Ernie Williamson Athletics Center 
         //-79.0421549, 35.8999127
@@ -113,6 +116,9 @@
 
       var daVectors = {
         "The center": daMarker,
+        "Carolina Basketball Museum/Ernie Williamson Athletics Center": daMarker2,
+        "Dorrance Field ": daMarker3,
+        "South Road Parkling lot": daMarker4
       }
       
       L.control.layers(daTiles, daVectors).addTo(map);
