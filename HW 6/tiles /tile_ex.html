@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leaflet Preview</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+
+   <script src = "./data /cb_museum_4326.geojson"></script>
+
+   <script src = "./data /dorrance_field_4326.geojson"></script>
+
+   <script src = "./data /south_road_4326.geojson"></script>
+
+  <style type="text/css">
+    body {
+       margin: 0;
+       padding: 0;
+    }
+    html, body, #map{
+       width: 100%;
+       height: 100%;
+    }
+  </style>
+
+</head>
+
+
+<body>
+  <div id="map"></div>
+  <script>
+      var map = L.map('map').setView([35.90352481107432, -79.04926200483555], 14.0);
+     
+     var daMarker = L.marker([35.90352481107432, -79.04926200483555]);
+
+     //Carolina Basketball Museum/Ernie Williamson Athletics Center 
+        //-79.0421549, 35.8999127
+        var cbIcon = L.icon({
+            iconUrl: 'https://www.vhv.rs/dpng/d/614-6142518_museum-icon-museum-png-free-transparent-png.png',
+            iconSize: [50,50],
+            popupAnchor: [0,0]
+        });
+
+        var customPopup = "The Ernie Williamson Athletic Center (which houses the UNC Carolina Basketball Museum) was built in 2007.<br/><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Ernie_Williamson_Athletics_Center_-_Carolina_Basketball_Museum_20140928.jpg/800px-Ernie_Williamson_Athletics_Center_-_Carolina_Basketball_Museum_20140928.jpg'width='100px'/>";
+
+
+        L.geoJSON(uncmuseum, { // a
+        pointToLayer: function (feature, latlng) { // b 
+        return L.marker(latlng, {icon: cbIcon});}}) // c 
+        .bindPopup(customPopup) // d
+        .addTo(map); //
+
+      //Dorrance Field 
+          //-79.044339, 35.908957
+        var dIcon = L.icon({
+            iconUrl: 'https://icon-library.com/images/soccer-icon-png/soccer-icon-png-11.jpg',
+            iconSize: [50,50],
+            popupAnchor: [0,0]
+        });
+
+        var customPopup = "The Dorrance Soccer Field construction broke ground in 2017 and was completed in 2019.<br/><img src='https://tkt.xosn.com/pics33/1024/UE/UEJOSPHKWAEEHIJ.20170213210657.jpg'width='100px'/>";
+
+
+        L.geoJSON(uncdorrance, { // a
+        pointToLayer: function (feature, latlng) { // b 
+        return L.marker(latlng, {icon: dIcon});}}) // c 
+        .bindPopup(customPopup) // d
+        .addTo(map); //
+
+      //South Road Parkling lot 
+        //-79.0426476,35.9100798
+        var srIcon = L.icon({
+            iconUrl: 'https://img.favpng.com/19/14/23/car-park-logo-computer-icons-symbol-png-favpng-zx7M7Nrp0Tj5SPUZ7m9Ksh9NH.jpg',
+            iconSize: [50,50],
+            popupAnchor: [0,0]
+        });
+
+        var customPopup = "The South road parking lot was under consturction at the time of the historical image but has since been completed.<br/><img src='https://www.insidehighered.com/sites/default/server_files/media/Screen%20Shot%202018-08-21%20at%203.09.10%20AM.png'width='100px'/>";
+
+
+        L.geoJSON(uncsouth, { // a
+        pointToLayer: function (feature, latlng) { // b 
+        return L.marker(latlng, {icon: srIcon});}}) // c 
+        .bindPopup(customPopup) // d
+        .addTo(map); //
+
+
+
+      var OSM = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	      maxZoom: 19,
+	      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+     
+      var daPhoto = L.tileLayer('./tiles_examples/{z}/{x}/{y}.png', {
+        minZoom: 12,
+        maxZoom: 16,
+        tms: false,
+        attribution: 'USGS'
+      })
+
+        var daTiles = {
+        "Open Street Map" : OSM,
+        "UNC Photo":daPhoto
+      }
+
+      var daVectors = {
+        "The center": daMarker,
+      }
+      
+      L.control.layers(daTiles, daVectors).addTo(map);
+  </script>
+</body>
+</html>
