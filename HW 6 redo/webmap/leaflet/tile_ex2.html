@@ -9,10 +9,19 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
    crossorigin=""/>
+
   <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
    crossorigin=""></script>
-  <style type="text/css">
+
+   <script src = "./data /wfhs_4326.geojson"></script>   
+
+   <script src = "./data /wfrp_4326.geojson"></script> 
+
+   <script src = "./data /wfjp_4326.geojson"></script> 
+
+
+  <style type="text/css"> 
     body {
        margin: 0;
        padding: 0;
@@ -22,17 +31,93 @@
        height: 100%;
     }
   </style>
+
+
 </head>
 <body>
   <div id="map"></div>
   <script>
       var map = L.map('map').setView([35.973923475388744, -78.4949110834048], 14.0);
-      L.tileLayer('./tiles_examples2/{z}/{x}/{y}.png', {
+
+      var daMarker = L.marker([35.973923475388744, -78.4949110834048]);
+      var daMarker2 = L.geoJSON(wfhs)
+      var daMarker3 = L.geoJSON(wfrp)
+      var daMarker4 =  L.geoJSON(wfjp)
+
+      //Wake Forest High School  
+        //-78.515736, 35.985383
+        var hsIcon = L.icon({
+            iconUrl: 'https://www.iconfinder.com/data/icons/buildings-vol-1/72/08-512.png',
+            iconSize: [50,50],
+            popupAnchor: [0,0]
+        });
+
+        var customPopup = "INSERT INFO HERE <br/><img src='https://www.wcpss.net/cms/lib/NC01911451/Centricity/Domain/12010/School-Building.png'width='100px'/>";
+
+
+        L.geoJSON(wfhs, { // a
+        pointToLayer: function (feature, latlng) { // b 
+        return L.marker(latlng, {icon: hsIcon});}}) // c 
+        .bindPopup(customPopup) // d
+        .addTo(map); //
+
+        //Wake Forest Resevoir Park 
+          //-78.483627, 35.976510
+          var rpIcon = L.icon({
+            iconUrl: 'data:image/png;base64,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',
+            iconSize: [50,50],
+            popupAnchor: [0,0]
+        });
+
+        var customPopup = "INSERT INFO HERE <br/><img src='https://traditionsnc.com/wp-content/uploads/2019/08/Bridgewater-Site-Plan-9-19-01-1024x687.jpg'width='100px'/>";
+
+
+        L.geoJSON(wfrp, { // a
+        pointToLayer: function (feature, latlng) { // b 
+        return L.marker(latlng, {icon: rpIcon});}}) // c 
+        .bindPopup(customPopup) // d
+        .addTo(map); //
+
+        //E. Carroll Joyner Park
+        //-78.516013, 35.995195
+        var jpIcon = L.icon({
+            iconUrl: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIEAAACBCAMAAADQfiliAAAAY1BMVEX///8AAAD4+Pinp6fOzs4sLCy+vr5BQUHHx8dOTk6MjIwfHx/T09OUlJTt7e2CgoLa2toxMTFWVlYUFBS4uLjl5eUlJSWvr69dXV2amppubm56enoLCwtzc3NJSUlpaWk4ODij4IQpAAAFIUlEQVR4nO2b2aKqIBSGE8fU0HJIs7L3f8qdC2fRkIXuG/+LMyTBJ9MaoNPp0KFDW4kYep7rFvmv9o1Mq5Xd/6P98Kz1lPq7A9yf2lD63gDaRPmuAE7TrB24ZfPveEeAJIUmo5ytAuvNEOh+BAWbfUnzfxLAB8FuAHQE8NVr305g09AafBbtuh5gJ8o4VBm/vHqlnMUHk9PeaX8mMAjh6FN7PDU2BAiBYNxYtSKjMdYG8t1Pvf+MDQF8/vw84k0XRNhaw8m8p2nzwLxsNxsGxqAYPnN6j+ytDGU+MESjDdAYPLT4NSClN9V75vePz3i4q43ZNJsyxgYAIXMIosBIaOI40/lmxCGloW4zyg3mAnOJ7J8rnrDBcpUDsHF+i7waDNdT+eYUrKg228RKfTgrcE7GFlaKrpnhpJqNH8VzMeHagjmVG1gpRiC65Vcek6fYSq3rg1u1OynuA8KzRnOi12rhKm2fupr4dtBYMFthMKm3EZrY2DYxjK3IOtBHZ/PExrZoy19UAJBbB1CKjULYfUOFeWiD9PIibPWJpZfKeqF2S1J97RbXzF6ss8L2Ae0ss7gtiKOwMQSbVGdeLYneuoPWndsMs+i4oD6JZh0eS2t9xffchh1DJ6AI4vm3qOzfM2wL8Sd9ucaacAVbQcp7QszWXINPxM8dWOhhsGcrFyM4VY8wCSZynV1PggRVBYKeFVe0a0aSoNpQXxgC6AMHQZDOPxITzAOulRUjIOiNGYzCQ54gnn0DUYFViHgbkhgBRA4od83X5paTEIEzu50Iq3YOOG8hQkB5Ka+1YokJc+CdOa7FJ7D0wdZBYR572KwO8zTMrurkBZOLQ1BNmkfXnm/ODuEqsXDt6yEZMB9pDvWeOQTEq/6+5mzIjNpZvOGDtzY987wV5bX+d0qnBH5T0CyLrPGu0WNQyYm0qfTThKDgFDPVpPbCN6dqZrQ6AjfhgGbKIrfcm1TOMpu9PnhNingqT+DIvfG+Mz3pBRAdARt412nPfLLV3vVPUcdyoFcNHgHoWg17Euv6fePDv2COYJtEJk9vPoH6DN6s2lhyQIDxxtYjFFMCJXHyCt1HBFeuL7epRnvijnOg1tguHAQHAYqAiGgzAmI9bmcR3dypoVFBENqauB7jjlBA4Cw3OdbY38ITJOsAvh7HsBfwBFOn6peGyRg0AfMro7sjogvrBLUEbBaI+tJgCIdHFmgC+JbwIQRcsBheLlBDcBMtDdmcg+AgOAgOgi0JhK8IkI9yAgpR1zP1BAWlB6fOOALCyYmIyO5FZigCmi03tKAuOYghIOflVsQQMATBchs/1HjNCII6SfqKrXXSWdaiWcEIAnaQLJFoq7MWCZoA0m1yRz9Rj12eAO4K8Q+vfqrowSMIulzoagVKCNjRj1zS/937KoIAXkTqwhQ7BjfQBCwna1pUKHDvlLC4JTqhCU51yPyx16k2Jc34YQjasxAZXZtaUJYplgfwup8soKyzYS63M6uyCzSRHgrJz15702v8oxyevmUi89b/6RRJhwTrd9nE90P4auovCoYsdb6lh4E2G0q/JZA704IQ/rpcBnIt5jSdBl3A7uqxdIxUal2cYPKCrAtqz/Eh3QnyBOTd7xpfuhPkCeCWT+dkgMWXuSguTcBMvBa4Aaj+WZdEJ0gTcH7VVml9JwCBKUHAOQautP7yFdylPC+XAcd2fP96xt+XuP5Vub+/HLZCm/q1fOMmdQkvzn/fvrXyqU+X5JeJ+HcUDx06NNEfv5RDKQYOl3cAAAAASUVORK5CYII=',
+            iconSize: [50,50],
+            popupAnchor: [0,0]
+        });
+
+        var customPopup = "INSERT INFO HERE .<br/><img src='https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/16/25755/18378'width='100px'/>";
+
+
+        L.geoJSON(wfjp, { // a
+        pointToLayer: function (feature, latlng) { // b 
+        return L.marker(latlng, {icon: jpIcon});}}) // c 
+        .bindPopup(customPopup) // d
+        .addTo(map); //
+
+        //ESRI World Imagery
+      var ESRI_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'});
+      
+      var daPhoto = L.tileLayer('./tiles_examples2/{z}/{x}/{y}.png', {
         minZoom: 12,
         maxZoom: 16,
         tms: false,
-        attribution: 'Generated by TilesXYZ'
+        attribution: 'USGS'
       }).addTo(map);
+
+      var daTiles = {
+        "ESRI" : ESRI_WorldImagery,
+        "Wake Forest Photo":daPhoto
+      }
+
+      var daVectors = {
+        "The center": daMarker,
+        "Wake Forest High School": daMarker2,
+        "Wake Forest Resevoir Park": daMarker3,
+        "E. Carroll Joyner Park": daMarker4
+      }
+
+      L.control.layers(daTiles, daVectors).addTo(map);
   </script>
 </body>
 </html>

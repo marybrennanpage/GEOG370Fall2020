@@ -96,7 +96,7 @@
         .addTo(map); //
 
 
-
+          //ESRI World Imagery
       var ESRI_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'});
      
       var daPhoto = L.tileLayer('./tiles_examples/{z}/{x}/{y}.png', {
@@ -108,7 +108,7 @@
 
         var daTiles = {
         "ESRI" : ESRI_WorldImagery,
-        "UNC Photo":daPhoto
+        "Wake Forest Photo":daPhoto
       }
 
       var daVectors = {
