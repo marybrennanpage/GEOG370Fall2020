@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 8</title>
+</head>
+<body>
+<h1>Homework 8: Census data ratios and categories</h1>
+<h2>Mary Page</h2>
+
+<!-- S1401_C01_001E = Estimate!!Total!!Population 3 years and over enrolled in school -->
+<!-- S1401_C01_008E = Estimate!!Total!!Population 3 years and over enrolled in school!!College, undergraduate -->
+
+
+<!-- map1 -->
+<!-- Chloropleth map of S1401_C01_001E = Estimate!!Total!!Population 3 years and over enrolled in school-->
+<!-- Uses natural breaks -->
+<h3>HW 7 map: In this map I used EPSG: 2283 (NAD83/Virginia North (ftUS)). This map shows the estimated total of the state of Virginia's Population that is 3 years and older enrolled in school by county. This encludes pre-school, k-12, undergraduate, and graduate students. As seen in the choropleth map, most of the counties have between 226-12,546 students that are 3 years old or older enrolled in school. Albemarle and Charlotesville Counties have more students than most of the state, ranging between 12,546-30,273 enrolled students. Montgomery County has even more enrolled students, ranging from 30,273-65,955 students. These counties having more enrolled students make sense, as UVA is located in Albemarle and Charlotesville counties, and Virginia Tech is located in Montgomery County. Furthermore, it makes sense that Montgomery County has more students than Albemarle/Charlottesville Counties as Virginia Tech has around 35,000 students and UVA has around 25,000 students. It also makes sense that the Northern Counties located in the suburbs of Washington D.C. have higher numbers of enrolled students, as those are densely populated counties. </h3>
+<!-- Your map goes here -->
+<a href="./hw7map.png">
+    <img src="./hw7map.png" alt="HW 7 Map: The Estimate Total Population 3 years and Older Enrolled in School in Virginia" width='500px'>
+    </a>
+
+<h2>The following maps are choropleth maps based on the same proportion but using varying modes. In using the same proportion with varying modes we are able to assess the pros and cons of modes by comparing them to one another. To create this proportion I used QGIS to create a new field called "cu/total" by using the following expression: ("S1401_C01_008E"/"S1401_C01_001E")*100. In other words, I divided the estimate total population 3 years and over enrolled in school in college, undergraduate, in the State of Virginia by the estimate total population 3 years and older enrolled in school in the State of Virginia. I then multiplied that number by 100.   </h2>
+<!-- created a new field cu/total: ("S1401_C01_008E"/"S1401_C01_001E")*100 -->
+<!--Per 100 people-->
+
+<h2>Map using Natural Breaks (Jenks):</h2>
+<!-- map2: cu_nb_100 (Natural Breaks)-->
+<h3>This map shows that most counties fall between the 6-20 and 20-40 classes. Very few classes appear to be in the other classes. </h3>
+<h3>Natural Breaks automatically searches for clusters and assigns them a category depending on how many categories are given. That is, using 5 classes Natural Breaks found clusters and assigend them their categories. This is a pro because it makes it easy to find and physically see clusters on the choropleth map. This can be seen below, as clusters of the 17-26 class can be seen in the suburbs of Washington D.C. However, a con of Natural Breaks is that depending on how many classes are created and the spread of the data, that classes containing a large range of numbers can be created and therefore display misleading "clusters".</h3>
+<!-- Your map goes here -->
+
+<a href="./cu_nb.png">
+    <img src="./cu_nb.png" alt="HW 8 Map: Proportion of Virginia Students 3 Years or Older that are Enrolled in College/are Undergraduates Per 100 People (Natural Breaks)" width='500px'>
+    </a>
+
+<h2>Map using Pretty Breaks:</h2>
+<!-- map3: cu_pretty_100 (Pretty Breaks) -->
+<h3>This map shows that most counties fall between the 6-20 class, with the second most being the 20-40 class. Very few counties appear to be in the other classes. This map slows slightly less variation than in the previous map.</h3>
+<h3>A pro of pretty breaks is that it creates class boundaries that are round numbers by rounding the break points up or down, so the classes are easy to read and consistently rounded. This can be seen in the map below as the classes are go by 20s (20-40, 40-60, 60-80) with the exception of the 6-20 and 80-84 classes. This makes the legend easy to read and it easy to differentiate the classes. A con of pretty breaks is that it is particular about the number of classes used so that it is able to create those "pretty" rounded breaks.</h3>
+<!-- Your map goes here -->
+<a href="./cu_pretty.png">
+    <img src="./cu_pretty.png" alt="HW 8 Map: Proportion of Virginia Students 3 Years or Older that are Enrolled in College/are Undergraduates Per 100 People (Pretty Breaks)" width='500px'>
+    </a>
+
+<h2>Map using Equal Count (Quantile):</h2>
+<!-- map4: cu_eq_100 (Equal Count-Quantile) -->
+<h3>This map shows a lot more variation in the classes than the previous maps. That is, there are many more counties in the 16-19, 19-22 and 22-84 classes. This can be explained by the total number of features being equally divided between the classes as is done in equal count.</h3>
+<h3>A pro of equal count is that you can compare the order of data, or use ordinal data, since it divides the total number of features equally between all the classes. A con of equal count is that it can be misleading, as it doens't accurately of efficiently show how much variation or difference there is between each class (since the breaks are made based on the order of the data rather than the relationship of the data). This can be seen as one class is 6-14, another 14-16, and the final one is 22-84. There is a huge difference between the range of data in the 22-84 class compared to the others. Moreover, this is because of the equal division of features amongst the classes based on the order of the data, resulting in 22-84 being a class.</h3>
+<!-- Your map goes here -->
+<a href="./cu_eq.png">
+    <img src="./cu_eq.png" alt="HW 8 Map: Proportion of Virginia Students 3 Years or Older that are Enrolled in College/are Undergraduates Per 100 People (Equal Count)" width='500px'>
+    </a>
+
+<h2>It is important to asses the pros and cons of modes when displaying data in choropleth maps, because as seen above, which mode is used results in varying maps and can result in misleading information. Furthermore, evlauating the data in different modes can help evaluate the data and identify clusters, etc.</h2>
+
+<!-- Link to your shapefile in Github and you CSV -->
+<h2>Data used for this project:</h2>
+    <a href="./ACSST5Y2018.S1401_2020-09-16T205337/censusdatacopy_cleaned.csv"> CSV dataset (clean)</a>
+    <p></p>
+    <a href="./va.geojson"> Link to shapefile (as a geoJSON)</a> 
+    <p></p>
+    <a href="./join/va_2283.shp"> Link to shapefile </a>
+</body>
+</html>
