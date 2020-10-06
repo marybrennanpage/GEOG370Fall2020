@@ -50,6 +50,10 @@
     <p></p>
     <a href="./nc_2264_2019.geojson"> Link to shapefile (as a geoJSON)</a> 
     <p></p>
+
+<h3>How I completed this HW:</h3>
+<dt> First I found the dataset on the NCDHHS website. However, downloading the data proved tricky, as it said that it was a CSV file but when I would try to open the data in QGIS using 'delimited text' the preview would show that all three columns were not seperated as they should be, and instead everything was in one column. To correct this I used 'Custom delimiters' and selected 'Tab', which then seperated all of the columns as they are supposed to be. Next I downloaded county level data for the entire United States and selected for NC using "STATEFP" = '037'. I then saved the selected features as a geojson using EPSG:2264. Once I re-opened both the CSV and geojson in QGIS, I joined the tables using "County" and "NAME". From there I was able to make the choropleth maps for cases, cases per 10k residents, deaths, and deaths per 10k residents. For each choropleth map I also created a new layer with the labeling of counties with higher counts/rates so that the reader could easily identify which counties those are. To do this I duplicated the choropleth layer, used single symbol symbology, selected for only the desired counties, saved the selected features as a new layer, and then applied labels for counties.
+</dt>
     
 </body>
 </html>
