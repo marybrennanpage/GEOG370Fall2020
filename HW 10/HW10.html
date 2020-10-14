@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 10</title>
+</head>
+<body>
+<h1>Homework 10: Geoprocessing Analysis</h1>
+<h2>Mary Page</h2>
+
+<h3> Topic: Chemours</h3>
+<dt> Chemours Co. is located "off N.C. 87 about 20 minutes outside Fayetteville near the Bladen-Cumberland County line" where "More than 200 people who live near the Chemours Co. chemical factory south of Fayetteville filed a federal lawsuit against the company and its predecessor, DuPont de Nemours Inc., citing the GenX and PFAS contamination of their property and water supplies" (Paul Woolverton). "As defined by the United States Environmenta Protection Agency (EPA), "Per- and polyfluoroalkyl substances (PFAS) are a group of man-made chemicals that includes PFOA, PFOS, GenX, and many other chemicals". PFAs can have adverse effects on healthy, including "Both chemicals have caused tumors in animals. The most consistent findings are increased cholesterol levels among exposed populations, with more limited findings related to: low infant birth weights, effects on the immune system, cancer (for PFOA), and thyroid hormone disruption (for PFOS)" (EPA). These chemicals, "were found in the water supplies of communities downstream, including Wilmington" and "They also have been found in the groundwater that supplies the wells for homes, businesses, schools and other places near the plant" (Paul Woolverton). In July 2017, "The Department of Environmental Quality directed Chemours to begin conducting sampling of 14 groundwater monitoring wells that are at the Chemours facility and not used for public purposes", as "Thirteen of 14 industrial wells at the company’s Fayetteville Works facility had detections of GenX in violation of state groundwater standards. The wells tested are used for environmental monitoring at the facility and are not a source of drinking water" (NC DEQ). Therefore, "on Sept. 15. As results came in and were verified, DEQ has directed Chemours to provide well owners with bottled water when GenX is detected above the state’s provisional health goal" (NC DEQ). Chemours' current sampling plan includes "collecting samples from private wells located one mile from the property boundary in all directions. DEQ will continue to direct Chemours to expand its sampling until the edge of the contamination plume is found" (NC DEQ).</dt>
+<a href="./GenX Sampling Map 20170906.pdf">
+    <img src="./GenX Sampling Map 20170906.pdf" alt="NC DEQ Map of Chemours GenX Sampling Locations and Results" width='500px'>
+    </a>
+<dt> I chose this topic for my homework because my dad is from Fayettville, NC, and all of my current family on my dad's side still resides in Cumberland, Bladen, and Sampson counties where this is occuring. Initially I wanted to attempt to plot cancer cases in the surroudning areas of the Chemours plant and Cape Fear River, however, as this situation is unfolding and developoing in real time, such data does not exist. </dt>
+
+<h3>My Question: How far is the Chemours plant from the Cape Fear River?</h3>
+<h3>Maps: </h3>
+<h4>Chemour Plant Location Map:</h4>
+<a href="./chemourplant.png">
+    <img src="./chemourplant.png" alt="Chemour Plant Location Map" width='500px'>
+    </a>    
+<h4>Geoprocessing Tools Used:</h4>
+<dt> </dt>
+
+<h4>Chemour Plant Location Map with ESRI Tile:</h4>
+
+<h3>Sources and Data :</h3>
+<dt>Sources:</dt>
+    <dd>
+        <a href="https://www.fayobserver.com/story/news/politics/elections/national/2020/05/26/residents-near-fayetteville-sue-chemours-dupont-for-genx-water-contamination/41756899/">The Fayettville Observer "Residents near Fayettville sue Chemours, DuPont for GenX water contamination"</a>
+    </dd>
+    <dd>
+        <a href="https://www.epa.gov/pfas/basic-information-pfas">EPA "Basic Information on PFAS"</a>
+    </dd>
+    <dd>
+        <a href="https://www.epa.gov/pfas/basic-information-pfas">NC DEQ "GenX Investigation"</a>
+    </dd>
+
+<dt>Data links:</dt>
+    <dd>
+        <a href="https://data-ncdenr.opendata.arcgis.com/datasets/majorhydro/data">Hydro Data: Rivers and Streams</a>
+    </dd>
+    <dd>
+        <a href="https://services.nconemap.gov/ncom-parcels-dd.htm">NC OneMap Parcels Data (Property Lines)</a>
+    </dd>
+    <p></p>
+    <a href="./county_pop_NC/county_pop_NC.shp"> NC Counties Shapefile</a>
+    <p></p>
+    <p></p>
+    <a href="./cleaned shapefiles/bladen_2264.geojson"> Bladen County Shapefile</a>
+    <p></p>
+    <p></p>
+    <a href="./cleaned shapefiles/cumberland_2264.geojson"> Cumberland County Shapefile</a>
+    <p></p>
+    <p></p>
+    <a href="./bladen_parcels/nc_bladen_parcels_poly.shp"> Bladen County Parcels (Property)</a>
+    <p></p>
+    <p></p>
+    <a href="./cleaned shapefiles/chemoursparcel_2264.geojson"> Chemours Parcel (Property)</a>
+    <p></p>
+    <p></p>
+    <a href="./union/cumb_blad_union_2264.geojson"> Cumberland and Bladen County Union</a>
+    <p></p>
+    <p></p>
+    <a href="./Intersections /cum_blad_union_river_inters.geojson"> Cumberland and Bladen County Union and River intersection </a>
+    <p></p>
+    
+</body>
+</html>
