@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <citation>
+            <citeinfo>
+                <origin/>
+                <pubdate>20040806</pubdate>
+                <title>Surface Water Intakes</title>
+                <geoform>vector digital data</geoform>
+                <pubinfo>
+                    <pubplace/>
+                    <publish>NC Dept. of Environmental Quality, Div. of Water Quality, Planning Branch</publish>
+                </pubinfo>
+                <othercit>NCCGIA distributes this dataset</othercit>
+                <onlink>http://www.nconemap.gov</onlink>
+            </citeinfo>
+        </citation>
+        <descript>
+            <abstract>The North Carolina Department of Environment, Health, and Natural Resources, Division of Water Quality, in cooperation with the NC Center for Geographic Information and Analysis, developed the GIS data set, Surface Water Intakes to enhance planning, siting and impact analysis in areas directly affecting water supply intakes in North Carolina. The file enables users to identify point locations where communities draw raw water from a lake, river, or stream; treat it; and distribute treated water to residences and businesses in North Carolina. The original locations were developed by the DEHNR-Div of Environmental Health, Public Water Supply Branch in April of 1990. Locations have been altered, added and deleted by the Division of Water Quality who updates this file in accordance with the Water Supply Watersheds file. This file is updated as changes occur.</abstract>
+            <purpose>This data was created to assist governmental agencies and others in making resource management decisions through use of a Geographic Information System (GIS).</purpose>
+            <supplinf>None</supplinf>
+        </descript>
+        <timeperd>
+            <timeinfo>
+                <rngdates>
+                    <begdate>19900401</begdate>
+                    <enddate>20040806</enddate>
+                </rngdates>
+            </timeinfo>
+            <current>Data creation and revision dates</current>
+        </timeperd>
+        <status>
+            <progress>Complete</progress>
+            <update>As needed</update>
+        </status>
+        <spdom>
+            <bounding>
+                <westbc>-84.106262</westbc>
+                <eastbc>-75.633976</eastbc>
+                <northbc>36.5359</northbc>
+                <southbc>34.163421</southbc>
+            </bounding>
+        </spdom>
+        <keywords>
+            <theme>
+                <themekt>None</themekt>
+                <themekey>Surface water intakes</themekey>
+                <themekey>Critical Area</themekey>
+                <themekey>High quality waters</themekey>
+                <themekey>Water supplies</themekey>
+                <themekey>Drinkable water</themekey>
+                <themekey>Potable water</themekey>
+            </theme>
+            <theme>
+                <themekt>ISO 19115 Topic Category</themekt>
+                <themekey>inlandWaters</themekey>
+                <themekey>environment</themekey>
+            </theme>
+            <place>
+                <placekt>William S. Powell, The North Carolina GAZETTEER, A Dictionary of Tar Heel Places, (Chapel Hill: University of North Carolina Press), August 1984.</placekt>
+                <placekey>North Carolina</placekey>
+            </place>
+        </keywords>
+        <accconst>None</accconst>
+        <useconst>Acknowledgement of products derived from this data set should cite the following: The source of the Surface Water Intakes data is the North Carolina Corporate Geographic Database. Earlier versions of this dataset may exist. The user must be sure to use the appropriate data set for the time period of interest. While efforts have been made to ensure that these data are accurate and reliable within the state of the art, CGIA cannot assume liability for any damages or misrepresentation caused by any inaccuracies in the data or as a result of changes to the data caused by system transfers.</useconst>
+        <ptcontac>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>NC DEHNR Div. Environmental Management</cntorg>
+                    <cntper>Steve Zoufaly</cntper>
+                </cntorgp>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>512 N. Salisbury Street</address>
+                    <city>Raleigh</city>
+                    <state>North Carolina</state>
+                    <postal>27604-1148</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>(919) 733-5083 ext. 566</cntvoice>
+                <cntfax>(919) 715-5637</cntfax>
+                <cntemail>stephen@dem.ehnr.state.nc.us</cntemail>
+                <hours>8am to 5pm</hours>
+                <cntinst>Preferred contact is by mail or telephone.</cntinst>
+            </cntinfo>
+        </ptcontac>
+    </idinfo>
+    <dataqual>
+        <attracc>
+            <attraccr>Public Water Supply lat/long coordinates were obtained by NC CGIA and plotted onto 1:100,000-scale format base maps with 1:100,000-scale hydrography to verify accuracy. They were attributed with a PWSB identification numbers supplied by the source agency. Intakes were edited on the screen, if necessary. Intake points have been repositioned by DEHNR,DWQ,WQS as they are updated. The IDs are checked for consistency. This digital file is currently updated as changes occur.</attraccr>
+        </attracc>
+        <logic>Using ESRI's ARC/INFO GIS software, the dataset was built for points using the 'build' command. Topology has not been edited since the last build or clean.</logic>
+        <complete>These data represent the locations where communities draw raw water from a lake, river, or stream, treat it, and distribute treated water to residences and businesses, as deter- mined by the Water Quality Section of the Div of Water Quality.</complete>
+        <posacc>
+            <horizpa>
+                <horizpar>Surface water intakes were marked on USGS 30 x 60 Minute series topographic base maps, which meet National Map Accuracy Standards, using a best estimate with reference to surrounding features.</horizpar>
+            </horizpa>
+        </posacc>
+        <lineage>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <pubdate>19900401</pubdate>
+                        <title>Surface Water Intakes</title>
+                    </citeinfo>
+                </srccite>
+                <srcscale>100000</srcscale>
+                <typesrc>hardcopyPaper</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <sngdate>
+                            <caldate>19900401</caldate>
+                        </sngdate>
+                    </timeinfo>
+                    <srccurr>Original release date</srccurr>
+                </srctime>
+                <srccitea>Surface Water Intakes</srccitea>
+                <srccontr>Original locations of surface water intakes</srccontr>
+            </srcinfo>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <pubdate>19900101</pubdate>
+                        <title>USGS 7.5 Minute series quadrangles</title>
+                    </citeinfo>
+                </srccite>
+                <srcscale>24000</srcscale>
+                <typesrc>hardcopyPaper</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <rngdates>
+                            <begdate>19380101</begdate>
+                            <enddate>19900101</enddate>
+                        </rngdates>
+                    </timeinfo>
+                    <srccurr>Publication dates of quadrangles</srccurr>
+                </srctime>
+                <srccitea>USGS 7.5 Minute series quadrangles</srccitea>
+                <srccontr>Paper maps used to delineate updates to the surface water intakes</srccontr>
+            </srcinfo>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <pubdate>19841986</pubdate>
+                        <title>USGS 30 x 60 Minute series quadrangles</title>
+                    </citeinfo>
+                </srccite>
+                <srcscale>100000</srcscale>
+                <typesrc>hardcopyPaper</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <rngdates>
+                            <begdate>19840101</begdate>
+                            <enddate>19860101</enddate>
+                        </rngdates>
+                    </timeinfo>
+                    <srccurr>Publication dates of quadrangles</srccurr>
+                </srctime>
+                <srccitea>USGS 30 x 60 Minute series quadrangles</srccitea>
+                <srccontr>Paper maps used to delineate the surface water intakes</srccontr>
+            </srcinfo>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <pubdate>19960823</pubdate>
+                        <title>Surface Water Intakes</title>
+                    </citeinfo>
+                </srccite>
+                <srcscale>24000</srcscale>
+                <typesrc>hardcopyPaper</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <rngdates>
+                            <begdate>19921117</begdate>
+                            <enddate>19960823</enddate>
+                        </rngdates>
+                    </timeinfo>
+                    <srccurr>Original revision date and most current revision date, respectively</srccurr>
+                </srctime>
+                <srccitea>Surface Water Intakes</srccitea>
+                <srccontr>Ongoing updates of surface water intakes</srccontr>
+            </srcinfo>
+            <procstep>
+                <procdesc>The DEHNR,DPH, Public Water Supply Branch compiled latitude/longitude Surface Water Intake coordinates from plotted locations on 1:100,000-scale format base maps. This file was supplied to CGIA of digital conversion.</procdesc>
+                <procdate>19900401</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>NC DEHNR - Div. of Environmental Health, Public Water Supply Branch</cntorg>
+                            <cntper>J.D. Monroe</cntper>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>1330 St. Mary's Street</address>
+                            <city>Raleigh</city>
+                            <state>North Carolina</state>
+                            <postal>27605-3248</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntvoice>(910) 486-1191</cntvoice>
+                        <cntfax>(910) 486-1858</cntfax>
+                        <hours>8:00am to 5:00pm</hours>
+                        <cntinst>Preferred contact is by mail or phone.</cntinst>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>Public Water Supply Branch lat/long coordinates for Surface Water Intake locations were supplied to CGIA, were generated as a statewide points coverage, and were plotted onto individual 1:100,000-scale USGS base maps with 1:100,000-scale hydrography to verify data accuracy. Upon review of maps, intakes were edited on screen as necessary.</procdesc>
+                <procdate>19900401</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>NC CGIA</cntorg>
+                            <cntper>David Giordano</cntper>
+                        </cntorgp>
+                        <cntpos>Database Administrator</cntpos>
+                        <cntaddr>
+                            <addrtype>mailing</addrtype>
+                            <address>20322 Mail Service Center</address>
+                            <city>Raleigh</city>
+                            <state>North Carolina</state>
+                            <postal>27699</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntvoice>919-754-6580</cntvoice>
+                        <cntfax>919-715-8551</cntfax>
+                        <cntemail>dataq@its.nc.gov</cntemail>
+                        <hours>8am to 5pm</hours>
+                        <cntinst>Phone and electronic mail preferred</cntinst>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>New Surface Water Intakes digitized by NCCGIA from USGS 1:24,000-scale topographic maps supplied by DWQ. Updates of digital files occur as needed.</procdesc>
+                <procdate>19960710</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>NC CGIA</cntorg>
+                            <cntper>David Giordano</cntper>
+                        </cntorgp>
+                        <cntpos>Database Administrator</cntpos>
+                        <cntaddr>
+                            <addrtype>mailing</addrtype>
+                            <address>20322 Mail Service Center</address>
+                            <city>Raleigh</city>
+                            <state>North Carolina</state>
+                            <postal>27699</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntvoice>919-754-6580</cntvoice>
+                        <cntfax>919-715-8551</cntfax>
+                        <cntemail>dataq@its.nc.gov</cntemail>
+                        <hours>8am to 5pm</hours>
+                        <cntinst>Phone and electronic mail preferred</cntinst>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>New Surface Water Intakes transferred onto USGS 1:24,000-scale topographic maps by DWQ staff from maps of varying scales supplied by area municipalities. Points were digitized by NCCGIA using ESRI's ARC/INFO version 5.0 GIS using a Calcomp digitizer and ARCEDIT.</procdesc>
+                <procdate>19960710</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>NC DEHNR - Division of Water Quality, Water Quality Section</cntorg>
+                            <cntper>Steve Zoufaly</cntper>
+                        </cntorgp>
+                        <cntpos>Environmental Supervisor</cntpos>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>512 N. Salisbury Street</address>
+                            <city>Raleigh</city>
+                            <state>North Carolina</state>
+                            <postal>27604-1148</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntvoice>(919) 733-5083 ext.566</cntvoice>
+                        <cntfax>(919)715-5637</cntfax>
+                        <hours>7:30AM - 4:30PM</hours>
+                        <cntinst>Phone and mail preferred</cntinst>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+        </lineage>
+    </dataqual>
+    <spdoinfo>
+        <indspref>_Method: None</indspref>
+        <direct>Vector</direct>
+        <ptvctinf>
+            <sdtsterm>
+                <sdtstype>Entity point</sdtstype>
+                <ptvctcnt>247</ptvctcnt>
+            </sdtsterm>
+        </ptvctinf>
+    </spdoinfo>
+    <eainfo>
+        <detailed>
+            <enttyp>
+                <enttypl>Surface Water Intakes</enttypl>
+                <enttypd>Point locations where communities draw raw water from a lake, river, or stream; treat it; and distribute treated water to residences and businesses.</enttypd>
+                <enttypds>NC DEHNR-Div of Water Quality, Water Quality Section</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>SHAPE</attrlabl>
+                <attrdef>Feature geometry.</attrdef>
+                <attrdefs>ESRI</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>Coordinates defining the features.</udom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>PERIMETER</attrlabl>
+                <attrdef>Total perimeter in coverage units</attrdef>
+                <attrdefs>Software computed</attrdefs>
+                <attrdomv>
+                    					
+                    <rdom>
+                        						
+                        <rdommin>0.000</rdommin>
+                        						
+                        <rdommax>0.000</rdommax>
+                        						
+                        <attrunit>meters</attrunit>
+                        						
+                        <attrmres>0.001</attrmres>
+                        					
+                    </rdom>
+                    				
+                </attrdomv>
+                <attrmfrq>None planned</attrmfrq>
+            </attr>
+            <attr>
+                <attrlabl>OBJECTID</attrlabl>
+                <attrdef>Internal feature number.</attrdef>
+                <attrdefs>ESRI</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>Sequential unique whole numbers that are automatically generated.</udom>
+                    				
+                </attrdomv>
+            </attr>
+        </detailed>
+    </eainfo>
+    <distinfo>
+        <distrib>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>NC Center for Geographic Information and Analysis</cntorg>
+                </cntorgp>
+                <cntpos>Database Administration</cntpos>
+                <cntaddr>
+                    <addrtype>mailing</addrtype>
+                    <address>20322 Mail Service Center</address>
+                    <city>Raleigh</city>
+                    <state>North Carolina</state>
+                    <postal>27699</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>919-754-6580</cntvoice>
+                <cntfax>919-715-8551</cntfax>
+                <cntemail>dataq@its.nc.gov</cntemail>
+                <hours>8:30AM - 5:30PM</hours>
+                <cntinst>Phone and electronic mail preferred</cntinst>
+            </cntinfo>
+        </distrib>
+        <distliab>NCCGIA is charged with the development and maintenance of NC OneMap and, in cooperation with other mapping organizations, is committed to offering its users accurate, useful, and current information. Although every effort has been made to ensure the accuracy of information, errors and conditions originating from physical sources used to develop this dataset may be reflected in the data supplied. The user must be aware of possible conditions and bear responsibility for the appropriate use of the information with respect to possible errors, original map scale, collection methodology, currency of data, and other conditions specific to certain data. NCCGIA does not support secondary distribution of this dataset without its current, compliant metadata record. The use of trade names or commercial products does not constitute their endorsement by NCCGIA or North Carolina State Government.</distliab>
+        <stdorder>
+            <digform>
+                <digtinfo>
+                    <formname>ESRI shapefile (*.shp)</formname>
+                </digtinfo>
+                <digtopt>
+                    <onlinopt>
+                        <computer>
+                            <networka>
+                                <networkr>http://data.nconemap.gov/downloads/vector/swi.zip</networkr>
+                            </networka>
+                        </computer>
+                    </onlinopt>
+                </digtopt>
+            </digform>
+            <fees>None. Download from http://www.nconemap.gov is free of charge.</fees>
+        </stdorder>
+    </distinfo>
+    <metainfo>
+        <metd>20110610</metd>
+        <metc>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>North Carolina Center for Geographic Information and Analysis</cntorg>
+                    <cntper>David Giordano</cntper>
+                </cntorgp>
+                <cntpos>Database Administration</cntpos>
+                <cntaddr>
+                    <addrtype>mailing</addrtype>
+                    <address>20322 Mail Service Center</address>
+                    <city>Raleigh</city>
+                    <state>North Carolina</state>
+                    <postal>27699</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>919-754-6580</cntvoice>
+                <cntfax>919-715-8551</cntfax>
+                <cntemail>dataq@its.nc.gov</cntemail>
+                <hours>8am to 5pm</hours>
+                <cntinst>Phone and electronic mail preferred</cntinst>
+            </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+        <metuc>This metadata file is to accompany the dataset. NCCGIA does not support secondary distribution of this dataset without its current, compliant metadata record. If the dataset described in this metadata record was received from anyone besides NCCGIA, this metadata and the dataset it describes may contain discrepancies.</metuc>
+    </metainfo>
+</metadata>

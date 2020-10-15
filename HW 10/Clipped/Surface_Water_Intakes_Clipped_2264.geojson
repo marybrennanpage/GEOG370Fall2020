@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "Surface_Water_Intakes_Clipped_2264",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::2264" } },
+"features": [
+{ "type": "Feature", "properties": { "OBJECTID": 216, "PERIMETER": 0, "SWI_": 216, "SWI_ID": 216, "PWSB_ID": "04-65-010", "POLYGONID": 0, "SCALE": 1, "ANGLE": 0, "onemapSDEA": null }, "geometry": { "type": "MultiPoint", "coordinates": [ [ 2213066.232645208481699, 239006.835042942111613 ] ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 72, "PERIMETER": 0, "SWI_": 72, "SWI_ID": 72, "PWSB_ID": "03-26-344", "POLYGONID": 0, "SCALE": 1, "ANGLE": 0, "onemapSDEA": null }, "geometry": { "type": "MultiPoint", "coordinates": [ [ 1988741.715626899618655, 521433.553601025545504 ] ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 76, "PERIMETER": 0, "SWI_": 76, "SWI_ID": 76, "PWSB_ID": "03-26-010", "POLYGONID": 0, "SCALE": 1, "ANGLE": 0, "onemapSDEA": null }, "geometry": { "type": "MultiPoint", "coordinates": [ [ 2040742.098813464632258, 484998.927013924170751 ] ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 205, "PERIMETER": 0, "SWI_": 205, "SWI_ID": 205, "PWSB_ID": "03-26-344", "POLYGONID": 0, "SCALE": 1, "ANGLE": 0, "onemapSDEA": null }, "geometry": { "type": "MultiPoint", "coordinates": [ [ 1992014.343205413781106, 519428.452727469964884 ] ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 217, "PERIMETER": 0, "SWI_": 217, "SWI_ID": 217, "PWSB_ID": "03-26-010", "POLYGONID": 0, "SCALE": 1, "ANGLE": 0, "onemapSDEA": null }, "geometry": { "type": "MultiPoint", "coordinates": [ [ 2030827.836638045031577, 480137.093583473586477 ] ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 218, "PERIMETER": 0, "SWI_": 218, "SWI_ID": 218, "PWSB_ID": "03-26-010", "POLYGONID": 0, "SCALE": 1, "ANGLE": 0, "onemapSDEA": null }, "geometry": { "type": "MultiPoint", "coordinates": [ [ 2032471.736343895550817, 479710.22619533672696 ] ] } }
+]
+}
